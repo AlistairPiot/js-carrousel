@@ -1,0 +1,54 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #85888e;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.slider {
+    border: 2px solid black;
+}
+
+.slider img {
+    display: none;
+    max-width: 100%;
+}
+
+img.active {
+    display: block;
+    animation: fade 0.8s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.btn-nav {
+    font-size: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.cont-btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: #f1f1f1;
+}
